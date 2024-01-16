@@ -433,7 +433,7 @@ class Scorecard(Base, BaseEstimator):
             metric_special=self._metric_special,
             metric_missing=self._metric_missing,
         )
-
+        print(X_t.columns)
         return self.estimator_.predict_proba(X_t)
 
     def decision_function(self, X):
